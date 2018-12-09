@@ -2,7 +2,7 @@ package com.mini.ssm.service;
 
 import com.mini.ssm.annotation.MiniService;
 
-@MiniService("MyServiceImpl")
+@MiniService
 public class MyServiceImpl implements MyService {
 
 	public String query(String name, String age) {

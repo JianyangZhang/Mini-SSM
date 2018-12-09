@@ -15,7 +15,7 @@ import com.mini.ssm.service.MyService;
 @MiniController
 @MiniMapping("/mini")
 public class MyController {
-	@MiniAutoWired("MyServiceImpl")
+	@MiniAutoWired("myServiceImpl")
 	private MyService myService;
 	
 	@MiniMapping("/query")

@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MiniAutoWired {
-	String value() default "";
+	String value(); // 参数必须为所需实例在容器中的键名，如果该实例没有自定义键名，默认为其类名且首字母小写
 }

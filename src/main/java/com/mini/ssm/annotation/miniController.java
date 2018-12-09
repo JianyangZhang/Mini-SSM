@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MiniController {
-	String value() default "";
+	String value() default ""; // 自定义该类的实例在容器中的键名，默认键名为类名且首字母小写
 }
